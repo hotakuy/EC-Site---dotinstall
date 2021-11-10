@@ -1,0 +1,74 @@
+.fv {
+  width: 100vw;
+  height: 400px;
+  background-image: url('../img/hero1.png');
+  background-size: cover;
+  background-position: center;
+}
+.contents__title {
+  margin-left: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.contents__container {
+  padding: 80px 0;
+}
+.contents__list {
+  margin: 0 auto;
+  padding: 0 16px;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.contents__item {
+  margin-bottom: 20px;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.contents__item__img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.contents__item__title {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.contents__item__price {
+  font-size: 1.6rem;
+}
+.contents__btn {
+  width: 65vw;
+  max-width: 560px;
+  height: 48px;
+  border: 2px solid #000;
+  margin: 16px auto 0;
+  text-align: center;
+}
+.contents__btn__link {
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 1.6rem;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .contents__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .contents__list {
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}

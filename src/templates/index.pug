@@ -1,0 +1,12 @@
+extends _head.pug
+
+block titles
+  -var title = 'My EC Site';
+
+block mainContent
+  body
+    include _header.pug
+    main
+    include _fv.pug
+    include _contents.pug
+    include _footer.pug

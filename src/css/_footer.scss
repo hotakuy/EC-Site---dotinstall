@@ -1,0 +1,33 @@
+footer {
+  background-color: #4C4948;
+  padding: 20px 16px;
+}
+.footer__container {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copy {
+  font-size: 1.6rem;
+}
+.footer__sns__item {
+  display: inline-block;
+  &:first-child {
+    margin-right: 8px;
+  }
+  i {
+    color: #fff;
+    font-size: 24px;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
